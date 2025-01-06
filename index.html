@@ -1,11 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Lukas's Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about" class="nav-links">About Me</a></li>
+                    <li><a href="#projects" class="nav-links">Projects</a></li>
+                    <li><a href="#contact"
+                            class="nav-links">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="about-me" id="about">
+            <div class="about-me-container">
+                <div class="text-container">
+                    <h2>About Me</h2>
+                    <p>Hi! I'm Lukas. I'm a student at IU International
+                        University, studying Applied Artificial Intelligence.
+                        I've been coding since March 2024.</p>
+                    <p>In my free time I like work on personal projects, workout
+                        and game with my friends.</p>
+                </div>
+                <img src="./resources/profile_picture.webp" alt="Image of Lukas"
+                    class="profile-pic" id="secret-button">
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="projects-container">
+                <h3>Checkout my Projects</h3>
+                <p>only the code...</p>
+                <div class="project">
+                    <p><a href="https://github.com/LukasKaeb/typingApp"
+                            target="_blank">Typing App</a>: Find out your WPM
+                        (words per minute).</p>
+                </div>
+                <div class="project">
+                    <p><a href="https://github.com/LukasKaeb/TypingApp-Backend"
+                            target="_blank">Typing App Backend:</a> The backend
+                        for Typing App, written in Python.</p>
+                </div>
+                <div class="project">
+                    <p><a href="https://github.com/LukasKaeb/AnyBook"
+                            target="_blank">AnyBook:</a> Search any book on the
+                        internet and bookmark it for later.</p>
+                </div>
+            </div>
+
+            <section id="contact">
+                <h2>Get in Contact with me</h2>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/lukas-kaeb-205580263/"
+                        target="_blank"><img src="./resources/icons8-linkedin-120.webp" alt="LinkedIn" class="icon"></a>
+                    <a href="https://www.linkedin.com/in/lukas-kaeb-205580263/"
+                        target="_blank"><img src="./resources/web/icons8-insta-ios-17-glyph-120.png" alt="instagram" class="icon"></a>
+                </div>
+            </section>
+
+            <div class="secret" id="secret" style="display: none;">
+                <h3>Secret Project</h3>
+                <p>Revealr</p>
+                <p>Mobile App for content creators to monitize their content
+                    easily :]</p>
+                <img src="./resources/revealr_mockup.webp" alt="image of revealr homescreen" class="revealr-img">
+                <button id="hide-secret">Hide</button>
+            </div>
+
+        </section>
+
+        <script src="main.js"></script>
+    </body>
 </html>

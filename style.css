@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    display: flex;
+}
+
+header nav {
+    margin: 0 auto;
+    display: flex;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1em;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.nav-links {
+    text-decoration: none;
+    color: white;
+}
+
+.about-me-container {
+    display: flex;
+    justify-content: start;
+    margin-top: 2em;
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    margin-right: 1em;
+    position: relative;
+    cursor: pointer;
+}
+
+.secret {
+    margin-top: 50px;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+}
+
+#contact {
+    margin-top: 2em;
+}
+
+/* optimize for mobile screens */
+@media screen and (max-width: 600px) {
+    header nav ul li {
+        margin: 0 0.5em;
+        line-height: 1.5em;
+    }
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+}
